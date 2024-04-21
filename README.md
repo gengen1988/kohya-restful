@@ -31,6 +31,14 @@ This will start the FastAPI server running on `http://127.0.0.1:8000`. The API e
 
 ## Usage
 
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:8000/sd-scripts/finetune/tag_images_by_wd14_tagger' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '["--help"]'
+```
+
 api docs: http://127.0.0.1:8000/docs
 
 paths and args can be found in sd-scripts.

@@ -2,7 +2,7 @@ import sys
 import os
 import asyncio
 from typing import Annotated
-from fastapi import Body, Query, FastAPI, HTTPException
+from fastapi import Body, FastAPI, HTTPException
 
 app = FastAPI()
 
@@ -25,7 +25,8 @@ async def proxy(url_path: str, args: Annotated[list[str] | None, Body()] = None)
 
     # Stream output directly to current process stdout
     async for line in proc.stdout:
-        print(line.decode(), end="")
+        sys.stdout.buffer.write(line)
+        sys.stdout.buffer.flush()
 
     await proc.wait()
     return script_path
