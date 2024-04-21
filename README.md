@@ -1,6 +1,6 @@
 # Welcome to the Kohya Stable Diffusion FastAPI Project
 
-This project integrates Kohya's stable diffusion scripts with FastAPI to provide a robust and scalable API for image generation tasks. Below you will find the necessary information to get started with this project.
+This project combines Kohya's stable diffusion scripts with FastAPI to create a straightforward API designed for image captioning and model training tasks. Its primary purpose is to enable the invocation of Python scripts through unified HTTP requests. Below you will find the essential information to start using this project.
 
 ## Getting Started
 
@@ -23,19 +23,15 @@ This project integrates Kohya's stable diffusion scripts with FastAPI to provide
 
 ### Running the Server
 
-   ```
-   start.bat
-   ```
+```
+start.bat
+```
 
 This will start the FastAPI server running on `http://127.0.0.1:8000`. The API endpoints are defined in the `main.py` file and can be accessed via the specified URL.
 
 ## Usage
 
-api docs:
-
-```
-http://127.0.0.1:8000/docs
-```
+api docs: http://127.0.0.1:8000/docs
 
 paths and args can be found in sd-scripts.
 
