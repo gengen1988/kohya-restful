@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+# transformers
+
+# wd14
+onnx==1.15.0
+onnxruntime-gpu==1.17.1
+onnxruntime==1.17.1
+protobuf==3.20.3
